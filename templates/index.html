@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pneumonia Diagnosis</title>
+</head>
+    <body>
+        <h1>上传x光照片，检查是否患有Pneumonia</h1>
+        <form method="POST" action="/" enctype="multipart/form-data">
+            <p>Please Upload a New Pic File (lung X-ray)</p>
+            <p><label>
+                <input type="file" name="file">
+            </label></p>
+            <p><input type="submit" value="Upload"></p>
+        </form>
+        <p>The predictions given is {{result}}<p>
+    </body>
+</html>
